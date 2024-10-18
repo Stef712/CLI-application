@@ -18,7 +18,7 @@ program.parse(process.argv);
 
 const argv = program.opts();
 
-function invokeAction({ action, id, name, emai, phone }) {
+function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
     case "list":
       listContacts();
@@ -29,7 +29,7 @@ function invokeAction({ action, id, name, emai, phone }) {
       break;
 
     case "add":
-      addContact(name, emai, phone);
+      addContact(name, email, phone);
       break;
 
     case "remove":
